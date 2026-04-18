@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double num1, num2;
+
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    double sum = num1 + num2;
+    double diff = num1 - num2;
+    double prod = num1 * num2;
+
+    cout << "\n--- Arithmetic Operations ---\n";
+    cout << "Addition       : " << sum << endl;
+    cout << "Subtraction    : " << diff << endl;
+    cout << "Multiplication : " << prod << endl;
+
+    if (num2 != 0)
+    {
+        double div = num1 / num2;
+        double mod = (int)num1 % (int)num2;
+
+        cout << "Division       : " << div << endl;
+        cout << "Modulus        : " << mod << endl;
+    }
+    else
+    {
+        cout << "Warning: Division by zero is not allowed!" << endl;
+    }
+
+    return 0;
+}
